@@ -955,6 +955,17 @@ Promise.all([
     }
 
 
+
+    /*
+
+    NO IDEA WHY I HAVE TO WRITE THIS CODE AGAIN (IN CONTROL_REDO.JS)
+    IF I DONT REPEAT IT THERE, THEN IT ONLY WORKS WHEN THE CONSOLE IS OPEN...
+
+    */
+
+
+
+
     var current_time = 0;
 
 	var window_offset = vec2.fromValues(rect.left, rect.bottom);
@@ -1008,19 +1019,6 @@ Promise.all([
 	        }
 	    }
 	}
-
-
-
-	function updateClick(){
-
-	    clicktime = performance.now()/1000;
-	    vec3.add(clickpos, player.focusVec, player.eyePt);
-
-	    clickData.set(0, clicktime)
-		.set(1, clickpos)
-		.update()
-	}
-
 
 
 	function mouseHandler(e){
